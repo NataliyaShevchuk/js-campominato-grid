@@ -14,3 +14,8 @@
     padding: 2rem;
     aspect-ratio: 1/1;
 }
+
+.mio-h1{
+    line-height: normal;
+    align-self: center;
+}

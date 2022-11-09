@@ -15,3 +15,28 @@
 // Proviamo sempre prima con dei console.log() per capire se stiamo ricevendo i dati giusti.
 // Le validazioni e i controlli possiamo farli anche in un secondo momento.
 
+//realizzo la var. del bottone attivarla tramite event listner
+const btnGenera = document.getElementById("btn-play");
+//creeo anche la costante di grid container da usare per dopo
+const gridContainer = document.querySelector("grid-container");
+const numCelle = 10;
+
+//ora attivo il bottone play 
+btnGenera.addEventListener("click", function () {
+    console.log(this);
+
+
+
+});
+
+function btnGenera(){
+
+    const totalCelle = parseInt(numCelle * numCelle);
+
+    for (let i = 0; i < totalCelle; i++){
+        gridContainer.innerHTML += `<div class='grid-cell' style='width: calc( 100% / ${ numCelle })'></div>`;
+    }
+}
+
+btnGenera(totalCelle);
+console.log(btnGenera(totalCelle));
