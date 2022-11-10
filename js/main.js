@@ -47,7 +47,7 @@ function generaGriglia(numCelle){
         newCella.classList.add("grid-cell");
         newCella.style.width = `calc(100% / ${numCelle})`;
         
-        newCella.innerHTML = i + 1;
+        newCella.innerHTML = i + 1; //rappresenta i numerini sulle celle 
         
         newCella.addEventListener("click", function (){
             this.classList.toggle("bg-primary");

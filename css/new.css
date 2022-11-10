@@ -1,0 +1,51 @@
+:root {
+    --cell-border-width: 5px;
+    --cell-border-color: white #808080 #808080 white;
+    --color-primary: #C6C6C6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    border-color:  #dbcbab white white #dbcbab;
+    border-width: 6px;
+    border-style: solid;
+}
+
+.grid-cell {
+    border: 1px solid rgb(143, 119, 152);
+    width: 50px;
+    aspect-ratio: 1/1;
+    background-color: #c6c6c6;
+    border-width: var(--cell-border-width);
+    border-style: solid;
+    border-color: var(--cell-border-color);
+    transition: border .3s;
+}
+
+.mio-h1{
+    line-height: normal;
+    align-self: center;
+}
+
+main{
+    width: 100%;
+    background-color: rgb(37, 127, 223);
+}
+
+.grid-cell.active {
+    border: 1px solid #ff9639;
+
+    background-color: #C6C6C6;
+}
+
+.grid-cell.active.bomba {
+    background-color: rgba(245, 16, 27, 0.402);
+    background-image: url("");
+}

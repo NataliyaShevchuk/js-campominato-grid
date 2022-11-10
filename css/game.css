@@ -1,0 +1,77 @@
+
+
+:root {
+    --cell-border-width: 5px;
+    --cell-border-color: white #808080 #808080 white;
+    --color-primary: #C6C6C6;
+}
+
+body {
+    background-color: #C6C6C6;
+    min-height: 100vh;
+}
+.toolbar {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #808080 white white #808080;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.toolbar .form-select {
+    width: 150px;
+    border-radius: 0;
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--cell-border-color);
+    background-color: var(--color-primary);
+}
+
+.btn-retro {
+    --bs-btn-color: #212529;
+    --bs-btn-bg: var(--color-primary);
+    --bs-btn-border-width: 4px;
+    /* --bs-btn-border-color: var(--cell-border-color); */
+    --bs-btn-active-border-color: transparent;
+    --bs-btn-border-radius: 0;
+    --bs-btn-hover-border-color: var(--cell-border-color);
+    --bs-btn-box-shadow: 0;
+    --bs-btn-disabled-opacity: 0.65;
+    --bs-btn-focus-box-shadow: 0;
+    border-color: var(--cell-border-color);
+}
+
+.grid-container {
+    border-width: 6px;
+    border-style: solid;
+    border-color: #808080 white white #808080;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 50px;
+    aspect-ratio: 1/1;
+    background-color: #C6C6C6;
+    border-width: var(--cell-border-width);
+    border-style: solid;
+    border-color: var(--cell-border-color);
+    transition: border .3s;
+}
+
+.cell.active {
+    border: 1px solid #808080;
+
+    background-color: #C6C6C6;
+}
+
+/* questo servirà daa effeto quando la cella sarà cliccata */
+.cell.active.bomb {
+    background-color: rgb(50, 16, 245);
+    background-image: url("");
+}
+

@@ -10,8 +10,8 @@
 }
 
 .grid-cell {
-    border: 1px solid rgb(163, 121, 121);
-    padding: 2rem;
+    border: 1px solid rgb(235, 233, 165);
+    
     aspect-ratio: 1/1;
 }
 
@@ -20,6 +20,11 @@
     align-self: center;
 }
 
-.container{
-    
+main{
+    width: 100%;
+    background-color: rgb(37, 127, 223);
+}
+header{
+    height: 80px;
+    width: 100%;
 }
